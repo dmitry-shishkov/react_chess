@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  .app {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px auto;
+    width: 950px;
+    height: 100%;
+
+    .chessBoardWrap {
+      padding: 58px 57px 61px 60px;
+      width: 734px;
+      height: 739px;
+      box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.4);
+
+      .chessBoard {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+
+        .square {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0;
+          padding: 0;
+          width: 76.8px;
+          height: 77.4px;
+        }
+      }
+    }
+
+    .rightBlock {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+
+      .figuresBlock {
+        display: flex;
+        height: 100%;
+        box-shadow: 3px 5px 20px 5px rgba(0, 0, 0, 0.4);
+
+        .figure {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 70px;
+          height: 70px;
+          background-color: rgb(40, 135, 220);
+          border: 1px solid #c0c0c0;
+        }
+      }
+
+      .btn {
+        height: 40px;
+        color: #fff;
+        background-color: rgb(40, 135, 220);
+      }
+    }
+  }
+}
